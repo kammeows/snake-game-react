@@ -1,0 +1,91 @@
+.body {
+  background-color: rgb(20, 19, 19);
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.header-left {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.header-right {
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+.score {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.bigRectangle {
+  width: 900px;
+  height: 500px;
+  background-color: #333;
+  position: relative;
+  margin: 20px;
+  background-image: linear-gradient(to right, #444 1px, transparent 1px),
+    linear-gradient(to bottom, #444 1px, transparent 1px);
+  background-size: 20px 20px; /* Adjust the size of the grid */
+}
+
+#gameOver {
+  font-size: larger;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
