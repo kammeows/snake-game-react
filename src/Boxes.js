@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Header from "../Header.js";
+import Header from "./Header.js";
 
 const Board = () => {
   const [circle, setCircle] = useState(0);
@@ -149,7 +149,7 @@ const Board = () => {
     const gridSize = 20; // Set this to the size of your grid squares
 
     let randomX, randomY;
-    
+
     // Generate random coordinates within the grid
     do {
       randomX = Math.floor(Math.random() * (rect.width / gridSize)) * gridSize;
